@@ -6,3 +6,9 @@ Upper case.
 Lower case.
 Symbols.
 Numbers.
+
+Links:
+
+Repository: https://github.com/eliurosario15/Password-Generator-2.git
+URL: https://eliurosario15.github.io/Password-Generator-2/
+
