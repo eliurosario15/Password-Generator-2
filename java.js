@@ -11,6 +11,21 @@ var upperCase = lowerCase.map(function(x){
 
 let userSelection = [];
 
+function generatePassword() {
+
+var userInput = window.prompt("How long do you want your password to be?")
+var lenghtInput = parseInt(userInput)
+
+if (isNaN(lenghtInput)) {
+    window.alert("Not a number")
+    return
+}
+
+if (lenghtInput < 8 || lenghtInput >128) {
+    window.alert("Password must be between 8 and 128 characters")
+}
+
+
 if (confirm("Do you want the password to include lower case letters?"))
 userSelection.push(...lowerCase);
 if (confirm("Do you want the password to include upper case letters?"))
@@ -20,7 +35,9 @@ userSelection.push(...numbers);
 if (confirm("Do you want the password to include symbols?"))
 userSelection.push(...symbols);
 
-console.log(userSelection);
+
+
+}
 
 
 
