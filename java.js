@@ -23,6 +23,7 @@ if (isNaN(lenghtInput)) {
 
 if (lenghtInput < 8 || lenghtInput >128) {
     window.alert("Password must be between 8 and 128 characters")
+    return
 }
 
 
@@ -34,6 +35,10 @@ if (confirm("Do you want the password to include numbers?"))
 userSelection.push(...numbers);
 if (confirm("Do you want the password to include symbols?"))
 userSelection.push(...symbols);
+
+if (userSelection == 0) {
+    window.alert("You must select a crietria")
+}
 
 
 
