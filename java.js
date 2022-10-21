@@ -1,5 +1,6 @@
 // Assignment code here
 
+
 //These are the arrays with the character options//
 
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
@@ -39,28 +40,18 @@ if (userSelection == 0) {
     return
 }
 
-console.log(userSelection);
+var newPassword = "";
 
-
+for (var i = 0; i < lenghtInput; i++) {
+  newPassword += userSelection[Math.floor(Math.random() * userSelection.length)];
+  }
+  
+  
+ return newPassword;
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-  
-    
-
-
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
